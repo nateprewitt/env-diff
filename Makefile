@@ -76,6 +76,7 @@ run: install
 
 .PHONY: setup
 setup:
+	pip install --upgrade --ignore-installed pip
 	pip install pipenv==3.6.0
 	touch Pipfile
 
