@@ -13,6 +13,7 @@ install:
   # Export build paths
   - copy C:\MinGW\bin\mingw32-make.exe C:\MinGW\bin\make.exe
   - set PATH=%PATH%;C:\MinGW\bin
+  - "pip install --disable-pip-version-check --user --upgrade pip"
   # Install system dependencies
   - make setup doctor
   # Install project dependencies
