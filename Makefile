@@ -112,6 +112,7 @@ endif
 
 $(PIP):
 	pipenv --python=$(SYS_PYTHON)
+	pipenv run pip install --upgrade --ignore-installed pip
 
 # CHECKS #######################################################################
 
